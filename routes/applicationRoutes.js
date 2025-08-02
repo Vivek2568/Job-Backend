@@ -13,5 +13,8 @@ router.post("/post", isAuthenticated, postApplication);
 router.get("/employer/getall", isAuthenticated, employerGetAllApplications);
 router.get("/jobseeker/getall", isAuthenticated, jobseekerGetAllApplications);
 router.delete("/delete/:id", isAuthenticated, jobseekerDeleteApplication);
+router.post("/dummy", (req, res) => {
+  res.send("working");
+});
 
 export default router;

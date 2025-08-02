@@ -8,5 +8,8 @@ router.post("/register", register);
 router.post("/login", login);
 router.get("/logout", isAuthenticated, logout);
 router.get("/getuser", isAuthenticated, getUser);
+// router.post("/dummy", (req, res) => {
+//     res.send("working");
+// });
 
 export default router;
